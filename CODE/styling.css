@@ -1,0 +1,30 @@
+/* Fuentes */
+body {
+  font-family: 'Source Code Pro', monospace;
+  background: #fafafa;
+  color: #333;
+  padding: 1rem;
+}
+pre {
+  background: #f0f0f0;
+  padding: 1rem;
+  overflow-x: auto;
+  border-radius: 4px;
+}
+
+/* Tokens */
+.token-keyword    { color: #0000FF; font-weight: bold; }   /* palabras reservadas */
+.token-state      { color: #2E8B57; }                     /* identificadores de estado */
+.token-literal    { color: #B22222; font-style: normal; } /* literales */
+.token-string     { color: #8B008B; }                     /* cadenas de prueba */
+.token-arrow      { color: #000000; font-weight: bold; }  /* flecha -> */
+.token-symbol     { color: #FF8C00; }                     /* símbolos: :, , */
+.token-comment    { color: #6A737D; font-style: italic; } /* comentarios */
+
+
+/* Clase para resaltar errores */
+.error            { background: #FFF3CD; color: #856404; }
+
+/* Resultados */
+.accepted         { color: #2E8B57; font-weight: bold; }
+.rejected         { color: #B22222; font-weight: bold; }

@@ -1,0 +1,36 @@
+// Autómata 1: cadenas de {a,x,y}+ seguido de '-' y luego uno o más dígitos
+alfabeto: 'a', 'x', 'y', '-', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'
+estados: q0, q1, q2, q3
+inicio: q0
+aceptación: q3
+transiciones:
+q0 -> q1 en 'a'
+q0 -> q1 en 'x'
+q0 -> q1 en 'y'
+q1 -> q1 en 'a'
+q1 -> q1 en 'x'
+q1 -> q1 en 'y'
+q1 -> q2 en '-'
+q2 -> q3 en '0'
+q2 -> q3 en '1'
+q2 -> q3 en '2'
+q2 -> q3 en '3'
+q2 -> q3 en '4'
+q2 -> q3 en '5'
+q2 -> q3 en '6'
+q2 -> q3 en '7'
+q2 -> q3 en '8'
+q2 -> q3 en '9'
+q3 -> q3 en '0'
+q3 -> q3 en '1'
+q3 -> q3 en '2'
+q3 -> q3 en '3'
+q3 -> q3 en '4'
+q3 -> q3 en '5'
+q3 -> q3 en '6'
+q3 -> q3 en '7'
+q3 -> q3 en '8'
+q3 -> q3 en '9'
+
+// Cadenas de prueba
+cadenas: "a-", "xyz-123", "ay-9999", "b-1"
